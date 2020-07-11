@@ -2,7 +2,7 @@
 
 Dashboard is a project where you can exchange Crypto Currency into the desired Crypto Currency. the project is build to exhibit coding practices and to match the similar design as given.
 
-you can visit the project in [here](https://csb-9ygej-g5v2m2kyb.vercel.app/dashboard/exchange)
+you can see the demo in [here](https://csb-9ygej-g5v2m2kyb.vercel.app/dashboard/exchange)
 
 
 ## Problem Statement
