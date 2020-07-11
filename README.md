@@ -37,4 +37,3 @@ npm start
 - cross-browser compatibility.
 
 ## solved the problem in 7-8 Hours including design and functionalities
-- focused on functionalities over design.
