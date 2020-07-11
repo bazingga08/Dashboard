@@ -154,6 +154,7 @@ class Exchange extends Component<Props, State> {
           let tempRate = this.state.exchangeData.rate || 0;
           let tempMinerFee = this.state.exchangeData.minerFee || 0;
           tempDestinationValue = ((tempDepositValue * tempRate) - tempMinerFee) || 0;
+          tempDestinationValue = tempDestinationValue < 0 ? 0 : tempDestinationValue;
           this.setState(prevState=>({
             destinationValue: tempDestinationValue ? tempDestinationValue.toFixed(4) : tempDestinationValue,
           }));
@@ -164,7 +165,7 @@ class Exchange extends Component<Props, State> {
           }
       }
       // stopping the loader once all the data has been assigned
-      if(this.state.destinationValue !== (prevState.destinationValue || 0)) {
+      if(this.state.destinationValue !== prevState.destinationValue) {
         this.setState(prevState=>({
           exchangeInProgress: false,
         }));
