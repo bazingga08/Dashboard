@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+}
+
+.app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #2e2f3d;
+}
+.nav-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  width: 250px;
+  height: 100vh;
+}
